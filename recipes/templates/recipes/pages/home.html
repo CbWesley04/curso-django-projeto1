@@ -1,15 +1,13 @@
-{%include 'recipes/partials/head.html' %}
+{% include 'recipes/partials/head.html' %}
 
 <body>
-    <head class="main-header-container">
-        <div class="main-header">
-            <h1>
-                <a href="/">
-                    <i class="fa-solid fa-skull"></i>
-                    <span>Welcome to Recipes {{name}}</span>
-                </a>
-            </h1>
-        </div>
-    </head>
+    {% include 'recipes/partials/header.html' %}
+    {% include 'recipes/partials/search.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+
+    </main>
 </body>
+
 </html>
